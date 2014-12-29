@@ -15,3 +15,21 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).on('page:change', function(){
+    if ($(".flash").is(":empty")) {
+        null;
+    } else {
+        $(".flash").animate({
+            opacity: 0
+        }, 2500);
+    }
+    
+    if ($(".alert").is(":empty")) {
+        null;
+    } else {
+        $(".alert").animate({
+            opacity: 0
+        }, 2500);
+    }
+});

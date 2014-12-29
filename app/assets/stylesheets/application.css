@@ -14,3 +14,20 @@
  *= require_tree .
  *= require_self
  */
+ 
+body {
+    margin: 0;
+}
+
+.flash, .alert {
+    position: absolute;
+    margin: 0;
+    line-height: 30px;
+    font-size: 0.9em;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: auto;
+    background: rgb(100, 197, 50);
+    background: rgba(100, 197, 50, 1);
+    text-align: center;
+}
