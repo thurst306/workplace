@@ -19,7 +19,10 @@
     <%= link_to current_user.full_name, employee_path(current_user) %>
     <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
 <% end %>
+
 <%= yield %>
+
+<p id="daraul_promotion_link">Created by <a href="https://github.com/thurst306/workplace" alt="Workplace github link" target="_blank">Daraul Harris</a>.</p>
 
 </body>
 </html>
