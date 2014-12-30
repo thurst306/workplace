@@ -44,3 +44,7 @@ h1 {
     background: rgba(100, 197, 50, 1);
     text-align: center;
 }
+
+nav {
+    display: block;
+}
