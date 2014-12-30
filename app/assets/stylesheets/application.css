@@ -19,6 +19,19 @@ body {
     margin: 0;
 }
 
+h1 {
+    margin: 0;
+    padding: 25px 0 0 0;
+    background: rgb(0, 188, 222);
+    background: rgba(0, 188, 222, 1);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5em;
+    font-weight: 800;
+}
+
 .flash, .alert {
     position: absolute;
     margin: 0;
