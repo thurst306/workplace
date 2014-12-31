@@ -1,4 +1,4 @@
-<h1><%= @organization.name %></h1>
+<% header @organization.name %>
 <%= link_to "Delete organization", organization_path(@organization), method: :delete, data: {confirm: "Are you sure about this? This will also delete all associated projects and their associated jobs"} %>
 
 <h2>Employees</h2>

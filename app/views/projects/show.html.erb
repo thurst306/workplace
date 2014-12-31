@@ -1,4 +1,4 @@
-<h1><%= @project.name %></h1>
+<% header @project.name %>
 
 <h2>Organization</h2>
 <%= link_to @project.organization.name, organization_path(@project.organization) %>
