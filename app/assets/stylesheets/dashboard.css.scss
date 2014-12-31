@@ -1,3 +1,30 @@
 // Place all the styles related to the dashboard controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    color: rgb(0, 165, 195);
+    color: rgba(0, 113, 134, 1);
+    margin: 0 0 10px 0;
+}
+
+ul {
+    margin: 0 0 10px 0;
+    padding: 0 0 0 20px;
+}
+
+ul li {
+    list-style-type: none;
+    
+}
+
+ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.85em;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
