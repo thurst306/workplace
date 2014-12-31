@@ -65,3 +65,8 @@ nav a.active {
     color: rgb(0, 165, 195);
     color: rgba(0, 113, 134, 1);
 }
+
+nav a:hover {
+    color: rgb(0, 165, 195);
+    color: rgba(0, 113, 134, 1);
+}
