@@ -70,3 +70,12 @@ nav a:hover {
     color: rgb(0, 165, 195);
     color: rgba(0, 113, 134, 1);
 }
+
+#daraul_promotion_link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75em;
+    margin: 0 10px 10;
+}
