@@ -61,7 +61,7 @@ nav a {
     font-size: 1.25em;
 }
 
-nav a:active {
+nav a.active {
     color: rgb(0, 165, 195);
-    color: rgba(0, 165, 195, 1);
+    color: rgba(0, 113, 134, 1);
 }

@@ -16,12 +16,12 @@
 
 <% if user_signed_in? %>
     <nav>
-        <%= link_to "Home", authenticated_root_path %>
-        <%= link_to "Projects", projects_path %>
-        <%= link_to "Employees", employees_path %>
-        <%= link_to "Organizations", organizations_path %>
-        <%= link_to "Jobs", jobs_path %>
-        <%= link_to current_user.full_name, employee_path(current_user) %>
+        <%= link_to "Home", authenticated_root_path, :class => "#{cp(authenticated_root_path)}" %>
+        <%= link_to "Projects", projects_path, :class => "#{cp(projects_path)}" %>
+        <%= link_to "Employees", employees_path, :class => "#{cp(employees_path)}" %>
+        <%= link_to "Organizations", organizations_path, :class => "#{cp(organizations_path)}" %>
+        <%= link_to "Jobs", jobs_path, :class => "#{cp(jobs_path)}" %>
+        <%= link_to current_user.full_name, employee_path(current_user), :class => "#{cp(employee_path(current_user))}" %>
         <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
     </nav>
 <% end %>
