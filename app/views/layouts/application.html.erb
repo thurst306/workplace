@@ -11,6 +11,9 @@
 
 <p class="flash"><%= flash.notice %></p>
 <p class="alert"><%= flash.alert %></p>
+
+<h1><%= content_for?(:header) ? content_for(:header) : "Workplace" %></h1>
+
 <% if user_signed_in? %>
     <nav>
         <%= link_to "Home", authenticated_root_path %>
