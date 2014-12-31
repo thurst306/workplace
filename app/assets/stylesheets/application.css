@@ -46,5 +46,22 @@ h1 {
 }
 
 nav {
-    display: block;
+    background: rgb(0, 188, 222);
+    background: rgba(0, 188, 222, 1);
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 10px;
+    font-size: 1.25em;
+}
+
+nav a:active {
+    color: rgb(0, 165, 195);
+    color: rgba(0, 165, 195, 1);
 }
