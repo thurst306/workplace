@@ -28,3 +28,11 @@ ul li a {
     color: rgba(0, 0, 0, 1);
     text-decoration: none;
 }
+
+div.center {
+    -webkit-column-count: 2;
+    -moz-column-count: 2; //I hate that you have to do this shit
+    column-count: 2;
+    width: 50%;
+    margin: 0 auto;
+}
