@@ -1,11 +1,11 @@
 <% header "All projects" %>
-<%= link_to "New project", new_project_path %>
+<%= link_to "New project", new_project_path, class: "new" %>
 
 <ul>
     <% @projects.each do |project| %>
         <li>
             <%= link_to project.name, project_path(project) %>
-            <%= link_to "Delete", project_path(project), method: :delete, data: {confirm: "Are you sure? This will delete all associated jobs as well."} %>
+            <%= link_to "Delete", project_path(project), method: :delete, data: {confirm: "Are you sure? This will delete all associated jobs as well."}, class: "delete" %>
         </li>
     <% end %>
 </ul>

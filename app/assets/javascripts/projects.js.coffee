@@ -37,5 +37,15 @@ ready = ->
         else 
             $('#project_name_field_feedback').html "Something was wrong here!"
             return false 
+            
+    $("ul li a").mouseenter ->
+        $(this).stop(true).animate({
+            paddingLeft: "+=5"
+        }, 250)
+    
+    $("ul li a").mouseleave ->
+        $(this).stop(true).animate({
+            paddingLeft: "-=5"
+        }, 250)
         
 $(document).on('page:change', ready)

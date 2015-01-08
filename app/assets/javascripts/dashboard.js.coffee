@@ -4,12 +4,12 @@
 
 ready = ->
     $("ul li a").mouseenter ->
-        $(this).animate({
+        $(this).stop(true).animate({
             paddingLeft: "+=5"
         }, 250)
     
     $("ul li a").mouseleave ->
-        $(this).animate({
+        $(this).stop(true).animate({
             paddingLeft: "-=5"
         }, 250)
     
