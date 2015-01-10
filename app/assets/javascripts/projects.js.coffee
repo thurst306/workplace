@@ -40,12 +40,12 @@ ready = ->
             
     $("ul li a").mouseenter ->
         $(this).stop(true).animate({
-            paddingLeft: "+=5"
+            paddingLeft: "5"
         }, 250)
     
     $("ul li a").mouseleave ->
         $(this).stop(true).animate({
-            paddingLeft: "-=5"
+            paddingLeft: "0"
         }, 250)
         
 $(document).on('page:change', ready)
