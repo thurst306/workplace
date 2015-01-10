@@ -32,4 +32,16 @@ $(document).on('page:change', function(){
             opacity: 0
         }, 2500);
     }
+    
+    $("ul li a").mouseenter(function() {
+        $(this).stop(true).animate({
+            paddingLeft: "+=5"
+        }, 250);
+    });
+    
+    $("ul li a").mouseleave(function() {
+        $(this).stop(true).animate({
+            paddingLeft: "-=5"
+        }, 250);
+    });
 });

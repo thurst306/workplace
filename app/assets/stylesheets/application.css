@@ -73,10 +73,10 @@ nav a:hover {
 }
 
 #daraul_promotion_link {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.75em;
-    margin: 0 10px 10;
+    margin: 0 10px 10px;
 }
