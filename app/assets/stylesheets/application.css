@@ -14,7 +14,7 @@
  *= require_tree .
  *= require_self
  */
- 
+
 body {
     margin: 0;
 }
@@ -45,31 +45,53 @@ h1 {
     text-align: center;
 }
 
-nav {
-    background: rgb(0, 188, 222);
-    background: rgba(0, 188, 222, 1);
-    text-align: center;
-    margin: 0 0 20px 0;
-    padding: 10px 0;
+#menu_button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 48px;
+    margin: 0 0 0 10px;
+    fill: rgb(0, 134, 158);
+    z-index: 2;
+    cursor: pointer;
 }
 
-nav a {
-    color: rgb(255, 255, 255);
-    color: rgba(255, 255, 255, 1);
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    padding: 0 10px;
-    font-size: 1.25em;
+#menu_button:hover {
+    fill: rgb(255, 255, 255);
 }
 
-nav a.active {
-    color: rgb(0, 165, 195);
-    color: rgba(0, 113, 134, 1);
-}
+@media screen and (orientation:landscape) {
+    nav {
+        background: rgb(20, 20, 80);
+        background: rgba(20, 20, 80, 1);
+        text-align: left;
+        position: fixed;
+        top: 0;
+        left: -200px;
+        width: 200px;
+        height: 100%;
+        padding: 48px 0 0 0;
+    }
 
-nav a:hover {
-    color: rgb(0, 165, 195);
-    color: rgba(0, 113, 134, 1);
+    nav a {
+        color: rgb(255, 255, 255);
+        color: rgba(255, 255, 255, 1);
+        display: block;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        padding: 10px 0 0 10px;
+        font-size: 1.25em;
+    }
+
+    nav a.active {
+        color: rgb(0, 165, 195);
+        color: rgba(0, 113, 134, 1);
+    }
+
+    nav a:hover {
+        color: rgb(0, 165, 195);
+        color: rgba(0, 113, 134, 1);
+    }
 }
 
 #daraul_promotion_link {

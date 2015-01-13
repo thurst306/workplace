@@ -44,4 +44,17 @@ $(document).on('page:change', function(){
             paddingLeft: "-=5"
         }, 250);
     });
+    
+    var menu_open = false;
+    
+    var menu_open_tween_speed = 0.5;
+    
+    $("#menu_button").click(function() {
+        if(menu_open){
+            TweenLite.to("nav", menu_open_tween_speed, { left:-200 });
+        } else {
+            TweenLite.to("nav", menu_open_tween_speed, { left:0 });
+        }
+        menu_open = !menu_open;
+    });
 });

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workplace</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-  <%= csrf_meta_tags %>
+    <title>Workplace</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/plugins/CSSPlugin.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/easing/EasePack.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenLite.min.js"></script>
+    <%= csrf_meta_tags %>
 </head>
 <body>
 
@@ -15,6 +18,11 @@
 <h1><%= content_for?(:header) ? content_for(:header) : "Workplace" %></h1>
 
 <% if user_signed_in? %>
+    <svg version="1.1" id="menu_button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <g>
+            <path d="M3,18h18v-2H3V18z M3,13h18v-2H3V13z M3,6v2h18V6H3z" id="menu_button_paths"></path>
+        </g>
+    </svg>
     <nav>
         <%= link_to "Home", authenticated_root_path, :class => "#{cp(authenticated_root_path)}" %>
         <%= link_to "Projects", projects_path, :class => "#{cp(projects_path)}" %>
