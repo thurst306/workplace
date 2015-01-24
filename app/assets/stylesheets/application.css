@@ -94,6 +94,40 @@ h1 {
     }
 }
 
+@media screen and (orientation:portrait) {
+    nav {
+        background: rgb(0, 188, 222);
+        background: rgba(0, 188, 222, 1);
+        margin: 0 0 20px 0;
+        text-align: center;
+        position: absolute;
+        top: -350px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    nav a {
+        color: rgb(255, 255, 255);
+        color: rgba(255, 255, 255, 1);
+        display: block;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        padding: 10px 0;
+        font-size: 1.25em;
+    }
+
+    nav a.active {
+        color: rgb(0, 165, 195);
+        color: rgba(0, 113, 134, 1);
+    }
+
+    nav a:hover {
+        color: rgb(0, 165, 195);
+        color: rgba(0, 113, 134, 1);
+    }
+}
+
+
 #daraul_promotion_link {
     position: fixed;
     right: 0;

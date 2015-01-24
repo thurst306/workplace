@@ -51,9 +51,17 @@ $(document).on('page:change', function(){
     
     $("#menu_button").click(function() {
         if(menu_open){
-            TweenLite.to("nav", menu_open_tween_speed, { left:-200 });
+            if(document.body.scrollWidth > document.body.scrollHeight) {
+                TweenLite.to("nav", menu_open_tween_speed, { left:-200 });
+            } else {
+                TweenLite.to("nav", menu_open_tween_speed, { top:-329 });
+            }
         } else {
-            TweenLite.to("nav", menu_open_tween_speed, { left:0 });
+            if(document.body.scrollWidth > document.body.scrollHeight) {
+                TweenLite.to("nav", menu_open_tween_speed, { left:0 });
+            } else {
+                TweenLite.to("nav", menu_open_tween_speed, { top:0 });
+            }
         }
         menu_open = !menu_open;
     });
