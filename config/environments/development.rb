@@ -20,7 +20,7 @@ Rails.application.configure do
   
   config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
-        address:              'smtp.gmail.com',
+        address:              'thurstshousecom.ipage.com',
         port:                 587,
         domain:               'daraul.com',
         user_name:            IO.readlines('secret_auth.txt')[0],
