@@ -18,6 +18,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
         
         #This role will help to find users that created organizations and allow them to edit those organizations
         @user.add_role "created_organization_#{organization.id}"
+        
+        UserMailer.sign_up_notification(@user.email).deliver
     end
 
   # GET /resource/edit
